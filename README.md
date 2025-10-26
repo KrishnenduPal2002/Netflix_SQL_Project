@@ -21,21 +21,19 @@ The data for this project is sourced from the Kaggle dataset:
 ## Schema
 
 ```sql
-DROP TABLE IF EXISTS netflix;
-CREATE TABLE netflix
-(
-    show_id      VARCHAR(5),
-    type         VARCHAR(10),
-    title        VARCHAR(250),
-    director     VARCHAR(550),
-    casts        VARCHAR(1050),
-    country      VARCHAR(550),
-    date_added   VARCHAR(55),
-    release_year INT,
-    rating       VARCHAR(15),
-    duration     VARCHAR(15),
-    listed_in    VARCHAR(250),
-    description  VARCHAR(550)
+CREATE TABLE netflix(
+	show_id VARCHAR(5),
+	type VARCHAR(10),
+	title VARCHAR(150),
+	director VARCHAR(208),
+	casts VARCHAR(1000),
+	country VARCHAR(150),
+	date_added VARCHAR(50),
+	release_year INT,
+	rating VARCHAR(10),
+	duration VARCHAR(15),
+	listed_in VARCHAR(200),
+	description VARCHAR(250)
 );
 ```
 
